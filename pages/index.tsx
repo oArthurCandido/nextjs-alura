@@ -1,27 +1,27 @@
-import Box from '@src/components/Box'
-import theme from '@src/theme/theme'
-import styled from 'styled-components'
-
-const MeuComponente = styled.div`
- color: purple;
-`
-
-export default function HomeScreen() {
-  return (
-    <Box tag='main'
-      styleSheet={{
-        fontFamily: theme.typography.fontFamily,
-        backgroundColor: {
-          xs: 'red',
-          sm: 'blue',
-          md: 'green'
-        }
+export { default } from '@src/screens/HomeScreen/HomeScreen';
 
 
 
-      }}>
-      <MeuComponente>Home</MeuComponente>
-    </Box>
+// import Box from '@src/components/Box'
+// import theme from '@src/theme/theme'
 
-  )
-}
+
+
+
+// export default function HomeScreen() {
+//   return (
+//     <Box tag='main'
+//       styleSheet={{
+//         fontFamily: theme.typography.fontFamily,
+//         backgroundColor: {
+//           xs: 'red',
+//           sm: 'blue',
+//           md: 'green'
+//         }
+
+//       }}>
+//       Home
+//     </Box>
+
+//   )
+// }

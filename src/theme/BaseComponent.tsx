@@ -8,11 +8,15 @@ interface StyledBaseComponent {
 }
 
 const StyledBaseComponent = styled.div<StyledBaseComponent>`
-   ${(styleSheet) => parseStyleSheet(styleSheet)}
+   ${({ styleSheet }) => parseStyleSheet(styleSheet)}
 `;
 
 export const BaseComponent = (props) => {
   return (
     <StyledBaseComponent{...props} />
   )
+}
+
+BaseComponent.defaultProps = {
+  styleSheet: {},
 }
