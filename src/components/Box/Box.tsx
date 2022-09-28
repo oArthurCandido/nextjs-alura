@@ -4,7 +4,7 @@ import React from 'react';
 
 
 interface BoxProps {
-  tag?: any;
+  tag?: 'main' | 'section' | 'article' | 'aside' | 'div' | 'header' | 'footer' | 'ul' | string;
   children?: React.ReactNode;
   styleSheet?: StyleSheet;
 
