@@ -1,4 +1,5 @@
 import Box from '@src/components/Box/Box'
+import Icon from '@src/components/Icon/Icon'
 import Text from '@src/components/Text/Text'
 import React from 'react'
 
@@ -16,7 +17,16 @@ export default function Feed({ children }) {
 
 Feed.Header = () => {
   return (
-    <Box><Text>Feed.Header</Text></Box>
+    <Box>
+      <Icon name={'youtube'} size={'xl'} />
+      <Icon name={'instagram'} />
+      <Icon name={'Instagram'} />
+      <Icon name={'Instagram'} />
+
+
+      <Text>Feed.Header</Text>
+
+    </Box>
   )
 }
 
